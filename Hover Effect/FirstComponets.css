@@ -1,0 +1,58 @@
+.card{
+    background-color: rgb(255, 190, 134);
+    width: 100%;
+    height: 100%;
+}
+
+
+.card_image{
+    height: 80%;
+    width:80%;
+  margin-left: 130px;
+  object-fit: cover;
+  scale: 1.15;
+}
+.card:hover .card_image{
+    scale: 1;
+    opacity: 0.5;
+}
+.card_body{
+    position: absolute;
+    padding: 50px;
+    color: white;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+.card_body::before{
+    content: '';
+    position: absolute;
+    inset: 20px;
+    border: 2px solid white;
+    scale: 1.25;
+}
+.card:hover .card_body::before{
+    opacity: 1;
+    scale: 1;
+
+}
+.card_title{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px 
+    rgba(0,10,0,.5);
+
+}
+.card_description{
+transition: opacity 0.25s,translate 0.25s;
+    translate: -25px;
+    font-size: 14px;
+    opacity: 0;
+
+}
+.card:hover .card_description{
+    opacity: 1;
+    translate: 0;
+    
+}
