@@ -5,7 +5,7 @@
 
 body{
     min-height: 100vh;
-    background: linear-gradient(#5c0c06,#e38931,#ecb02b);
+    background: linear-gradient(#5c0c06,#0a0a0a,#0c0c0c);
 
 }
 .main{
@@ -99,7 +99,7 @@ body{
 
 }
 .wrapper .static-txt{
-color: black;
+color: white;
 font-size: 60px;
 font-weight: 400;
 }
@@ -142,7 +142,7 @@ position: absolute;
 height: 85px;
 width: 340px;
 border-left: 2px solid rgb(239, 49, 65);
-background:#f0ae1f 10%;
+background:black ;
 left: 0;
 animation: typing 3.0s steps(12) infinite;
 }
