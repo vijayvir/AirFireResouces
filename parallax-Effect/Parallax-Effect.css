@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#5c0c06,#e38931,#ecb02b);
+
+}
+.main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+.navbarj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbarjk{
+    list-style: none;
+    margin-left: 60px;
+    gap: 3px;
+}
+
+#a{
+    text-decoration: none;
+    padding: 8px 35px;
+    color: white;
+    border-radius: 30px;
+}
+
+#a:hover ,
+#a.active 
+{
+    background:  #ecb02b;
+    color:  #5c0c06;
+}
+
+#Ant_Fire{
+     width: 1300px;
+     height: 900px ;
+   
+}
+
+.intention{
+    position: absolute;
+    margin-top: 100px;
+    width: 400px;
+    margin-left: 130px;
+}
+
+
+
+
+
+
+
+.main2{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+   margin-top: 200px;
+    
+   
+  
+   
+    
+}
+
+
+
+
+.wrapper{
+    display: inline-flex;
+    width: 800px;
+    height: 300px;
+
+}
+.wrapper .static-txt{
+color: black;
+font-size: 60px;
+font-weight: 400;
+}
+
+.wrapper .dynamic-txts{
+ 
+ line-height: 100px;
+ height: 90px;
+ overflow: hidden;
+
+
+}
+
+.dynamic-txts li{
+    color: rgb(239, 49, 65);
+    font-size: 60px;
+    font-weight: 500;
+    list-style: none;
+    top: 0;
+    position: relative;
+    
+    animation: slide 15s steps(5) infinite;
+}
+
+
+@keyframes slide {
+    100%{
+        top:-495px;
+    }
+}
+
+.dynamic-txts li span{
+    position: relative;
+
+}
+
+.dynamic-txts li span::after{
+ content: "";
+position: absolute;
+height: 85px;
+width: 340px;
+border-left: 2px solid rgb(239, 49, 65);
+background:#f0ae1f 10%;
+left: 0;
+animation: typing 3.0s steps(12) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
