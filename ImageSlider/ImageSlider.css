@@ -129,24 +129,3 @@ background:#6c042e ;
 
 
 
- body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins';
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .partners_section{
-    padding: 64px 0;
-  }
-.section_title{
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.section_title h3{
-    font-size: 2rem;
-    font-weight: bold;
-}
