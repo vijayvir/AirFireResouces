@@ -1,0 +1,97 @@
+
+:root{
+    --total-brand:8;
+   --logo-width:12rem;
+   --total-logo-width:calc(var(--total-brand)* var(var(--logo-width)* 2 ))
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.main3{
+    min-height: 100vh;
+    place-items: center;
+    display: grid;
+    position: absolute;
+    margin-bottom: 190px;
+}
+.main3 h1{
+    font: 700 2.5rem sans-serif;
+    text-transform: uppercase;
+  
+    color: white;
+    text-align: center;
+    margin-left: 00px;
+    margin-top: 200px;
+ 
+
+    
+}
+.slider{
+    position: relative;
+    width: 1470px;
+    height: 12rem;
+    background-color: rgb(247, 244, 244) ;
+    box-shadow:  rgba(247, 246, 246, 0.25) 0px 54px 55px, rgba(249, 247, 247, 0.12) 0px -12px 30px, rgba(245, 244, 244, 0.12) 0px 4px 6px, rgba(247, 244, 244, 0.17) 0px 12px 13px, rgba(248, 246, 246, 0.09) 0px -3px 5px; 
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 5px;
+   margin-bottom: 150px;
+}
+.slider::before,
+.slider::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: var(--logo-width);
+
+
+}
+
+
+
+.slider::before{
+    left: 0;
+    background: linear-gradient(to right, #000,#0000 100%);
+}
+
+.slider::after{
+    right: 0;
+    background: linear-gradient(to left, #000 0%,#0000 100%);
+}
+
+.slider ul.brands{
+    list-style: none;
+    width: var(--total-logo-width) ;
+    display: flex;
+
+    animation: slideleft 19s linear infinite;
+}
+
+@keyframes slideleft{
+    100%{
+        transform: translateX(calc(-100% /2));
+    }
+}
+
+
+
+ul.brands li.brand-logo{
+    width:var(--logo-width);
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 9rem;
+}
+
+@media  (max-width:769px){
+    .main3 h1{
+              margin-top: 1600px;
+              margin-bottom: 100px;
+           
+             
+    }
+}
